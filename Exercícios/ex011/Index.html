@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="fotos flexíveis">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/01 - Mariah Carey - All I Want for Christmas Is You.mp3" controls loop></audio>
+    <audio controls>
+        <source src="midia/01 - Mariah Carey - All I Want for Christmas Is You.mp3" type="audio/mpeg">
+        <source src="midia/01 - Mariah Carey - All I Want for Christmas Is You.ogg" type="audio/ogg">
+        <source src="midia/01 - Mariah Carey - All I Want for Christmas Is You.wav" type="audio/wav">
+    </audio>
+</body>
+</html>

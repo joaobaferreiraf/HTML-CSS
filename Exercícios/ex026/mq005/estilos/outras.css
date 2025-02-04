@@ -1,0 +1,18 @@
+@charset "UTF=8";
+
+/* Para telas maiores */
+
+@media print {
+    i#burguer {display: none;}
+
+    menu > ul > li > a {display: none;}
+
+    main::after {content: "Impresso a partir do site xxx";}
+}
+
+@media screen and (min-width: 768px) {
+    i#burguer {display: none;}
+    menu {display: block;}
+    menu > ul > li {display: inline-block;}
+    main {width: 800px;}
+}

@@ -8,18 +8,67 @@
         div.container {
             background-color: lightsalmon;
             display: flex;
+            flex-direction: row;
+        }
+
+        div.container1 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        div.container2 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: column;
+        }
+
+        div.container3 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: column-reverse;
         }
 
         div.item {
              background-color: lightskyblue;
              border: 1px solid blue;
-             flex:auto;
              text-align: center;
+             padding: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item">f</div>
+        <div class="item">g</div>
+    </div>
+    <br>
+    <div class="container1">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item">f</div>
+        <div class="item">g</div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item">f</div>
+        <div class="item">g</div>
+    </div>
+    <br>
+    <div class="container3">
         <div class="item">a</div>
         <div class="item">b</div>
         <div class="item">c</div>

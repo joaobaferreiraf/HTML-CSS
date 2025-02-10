@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+        }
+
+        div.item {
+             background-color: lightskyblue;
+             border: 1px solid blue;
+             text-align: center;
+             flex-flow: row nowrap;
+             flex-basis: auto;
+        }
+
+        div.item1 {
+            background-color: lightskyblue;
+             border: 1px solid blue;
+             text-align: center;
+             flex-flow: row nowrap;
+             flex-basis: 120px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">a</div>
+        <div class="item">outro conteúdo</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">conteúdo maior que vai ocupar mais espaço</div>
+        <div class="item">f</div>
+        <div class="item">g</div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="item1">a</div>
+        <div class="item1">outro conteúdo</div>
+        <div class="item1">c</div>
+        <div class="item1">d</div>
+        <div class="item1">conteúdo maior que vai ocupar mais espaço</div>
+        <div class="item1">f</div>
+        <div class="item1">g</div>
+    </div>
+</body>
+</html>

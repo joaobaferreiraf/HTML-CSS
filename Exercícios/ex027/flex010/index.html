@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            height: 70px;
+            align-items: start;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+             background-color: lightskyblue;
+             border: 1px solid blue;
+             text-align: center;
+             height: 30px;
+             flex-basis:30px;
+             margin: 10px;
+             border-radius: 10px;
+             flex-shrink: 1;
+             flex-grow: 0;
+        }
+
+        div.item1 {
+             background-color: lightskyblue;
+             border: 1px solid blue;
+             text-align: center;
+             height: 30px;
+             flex-basis: 30px;
+             margin: 10px;
+             border-radius: 10px;
+             flex-shrink: 1;
+             flex-grow: 1;
+        }
+
+        div.item2 {
+             background-color: lightskyblue;
+             border: 1px solid blue;
+             text-align: center;
+             height: 30px;
+             flex-basis: 30px;
+             margin: 10px;
+             border-radius: 10px;
+             flex-shrink: 0;
+             flex-grow: 0;
+        }
+
+        div.item3 {
+             background-color: lightskyblue;
+             border: 1px solid blue;
+             text-align: center;
+             height: 30px;
+             flex-basis: 30px;
+             margin: 10px;
+             border-radius: 10px;
+             flex-shrink: 0;
+             flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>shrink 1 / grow 0</p>
+    <div class="container">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item">f</div>
+        <div class="item">g</div>
+    </div>
+    <br>
+    <p>shrink 1 grow 1</p>
+    <div class="container">
+        <div class="item1">a</div>
+        <div class="item1">b</div>
+        <div class="item1">c</div>
+        <div class="item1">d</div>
+        <div class="item1">e</div>
+        <div class="item1">f</div>
+        <div class="item1">g</div>
+    </div>
+    <br>
+    <p>shrink 0 grow 0</p>
+    <div class="container">
+        <div class="item2">a</div>
+        <div class="item2">b</div>
+        <div class="item2">c</div>
+        <div class="item2">d</div>
+        <div class="item2">e</div>
+        <div class="item2">f</div>
+        <div class="item2">g</div>
+    </div>
+    <br>
+    <p>shrink 0 grow 1</p>
+    <div class="container">
+        <div class="item3">a</div>
+        <div class="item3">b</div>
+        <div class="item3">c</div>
+        <div class="item3">d</div>
+        <div class="item3">e</div>
+        <div class="item3">f</div>
+        <div class="item3">g</div>
+    </div>
+</body>
+</html>

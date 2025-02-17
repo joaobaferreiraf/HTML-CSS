@@ -16,27 +16,26 @@
         div.item {
              background-color: lightskyblue;
              border: 1px solid blue;
-             flex-flow: row nowrap;
              text-align: center;
-             flex-basis: 250px;
              margin: 10px;
              height: 50px;
              border-radius: 10px;
         }
 
-        div.1 {
-            flex-grow: 0;
-             flex-shrink: 1;
+        div#cx1 {
+            /* flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 250px; */
+
+            flex: 0 1 250px;
         }
 
-        div.2 {
-            flex-grow: 2;
-            flex-shrink: 0;
+        div#cx2 {
+            flex: 2 0 250px;
         }
 
-        div.3 {
-            flex-grow: 1;
-             flex-shrink: 1;
+        div#cx3 {
+            flex: 1 0 250px;
         }
 
         
@@ -44,9 +43,9 @@
 </head>
 <body>
     <div class="container">
-        <div class="item" class="1">a</div>
-        <div class="item" class="2">b</div>
-        <div class="item" class="3">c</div>
+        <div class="item" id="cx1">a</div>
+        <div class="item" id="cx2">b</div>
+        <div class="item" id="cx3">c</div>
     </div>
 </body>
 </html>
